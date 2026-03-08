@@ -1,54 +1,52 @@
-AI Prediction Hub - Frontend (React)
+🚀 AI Prediction Hub - Web Application
 
-ระบบหน้าบ้าน (Frontend) สำหรับเชื่อมต่อและแสดงผลการทำนายจากโมเดล Machine Learning พัฒนาด้วย React และ Tailwind CSS
+ยินดีต้อนรับสู่โปรเจกต์หน้าบ้าน (Frontend) ของระบบ AI Prediction Hub ซึ่งเป็นระบบที่รวบรวมโมเดล Machine Learning ไว้ในที่เดียว ออกแบบด้วย UI ที่ทันสมัยและใช้งานง่าย
 
-✨ ฟีเจอร์เด่น
+🔗 ลิงก์ระบบหลังบ้าน (API): FAST-API-LM
 
-Modern UI: ออกแบบด้วย Shadcn/ui และ Tailwind CSS ให้ความรู้สึกพรีเมียม
+✨ ฟีเจอร์การใช้งาน (Features)
 
-Responsive Design: ใช้งานได้ทุกอุปกรณ์ (Mobile, Tablet, Desktop)
+ระบบนี้เชื่อมต่อกับ FastAPI เพื่อให้บริการ AI ทั้งหมด 4 ด้าน:
 
-Real-time Feedback: แสดงผลการประเมินทันทีพร้อมกราฟความน่าจะเป็น
+✈️ พยากรณ์ราคาตั๋วเครื่องบิน - คำนวณราคาตั๋วจากสายการบินและจุดหมายปลายทาง
 
-Smooth Animations: ใช้ Framer Motion เพื่อสร้างประสบการณ์การใช้งานที่ดี
+🧠 ประเมินภาวะซึมเศร้า - วิเคราะห์ความเสี่ยงจากข้อมูลพฤติกรรมและการใช้ชีวิต
 
-🧪 เทคโนโลยีที่ใช้
+🐾 จำแนกประเภทสัตว์ - อัปโหลดรูปภาพเพื่อแยกแยะสัตว์ 5 ชนิดด้วยโมเดล CNN
 
-Core: React 18, Vite, TypeScript
+🎬 แนะนำภาพยนตร์/รายการทีวี - ค้นหาและแนะนำสื่อที่ใกล้เคียงกับความสนใจ
 
-Styling: Tailwind CSS, Lucide Icons, Shadcn/ui
+🛠️ วิธีการติดตั้งและรันโปรเจกต์ (How to run locally)
 
-State & Animation: Framer Motion, Sonner (Toast Notifications)
+หากต้องการนำโค้ดนี้ไปรันบนเครื่องของคุณ สามารถทำตามขั้นตอนได้ดังนี้:
 
-API Fetching: Axios / Native Fetch
+1. Clone โปรเจกต์นี้ลงเครื่อง
 
-⚙️ การตั้งค่า API
-
-ต้องระบุ URL ของหลังบ้านในไฟล์ src/config/api.ts:
-
-export const API_URL = '[http://127.0.0.1:8000](http://127.0.0.1:8000)';
+git clone [https://github.com/AnusoenSaman/ai-companion-suite.git](https://github.com/AnusoenSaman/ai-companion-suite.git)
+cd ai-companion-suite
 
 
-🚀 วิธีเริ่มใช้งาน
-
-ติดตั้ง Dependencies:
+2. ติดตั้ง Dependencies
+ตรวจสอบให้แน่ใจว่าติดตั้ง Node.js เรียบร้อยแล้ว จากนั้นรันคำสั่ง:
 
 npm install
 
 
-รันเซิร์ฟเวอร์พัฒนา:
+3. ตรวจสอบการเชื่อมต่อ API
+เข้าไปที่ไฟล์ src/config/api.ts และตั้งค่า IP ให้ตรงกับเซิร์ฟเวอร์หลังบ้านของคุณ (ค่าเริ่มต้นคือ http://127.0.0.1:8000)
+
+4. เริ่มต้นการทำงาน (Start Development Server)
 
 npm run dev
 
 
-หมายเหตุ: หน้าเว็บจะรันอยู่ที่ http://localhost:5173
+เปิดเว็บบราวเซอร์และไปที่ http://localhost:5173 เพื่อเริ่มใช้งาน!
 
-📁 โครงสร้างโปรเจกต์
+💻 โครงสร้างโค้ดและการปรับแต่ง (How to edit this code)
 
-src/pages: หน้าหลักของแต่ละระบบทำนาย
+หน้าเว็บต่างๆ (Pages): อยู่ในโฟลเดอร์ src/pages/
 
-src/components: คอมโพเนนต์ UI ต่างๆ
+ส่วนประกอบ UI (Components): อยู่ในโฟลเดอร์ src/components/ (ใช้ Shadcn UI)
 
-src/config: การตั้งค่าการเชื่อมต่อ API
+การเชื่อมต่อ API: จัดการผ่านไฟล์ src/config/api.ts
 
-© 2024 AI Prediction Project
